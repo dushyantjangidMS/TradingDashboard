@@ -6,6 +6,7 @@ Multi-page Streamlit application combining:
   2. PNL Calculator (with auto-fetch)
   3. Excel Merger
   4. VAR Cost Calculator
+  5. Hedge Summary Calculator
 
 Run:
     cd TradingDashboard
@@ -121,6 +122,9 @@ excel_merger_page = st.Page(
 var_cost_page = st.Page(
     "apps/var_cost.py", title="VAR Cost Calculator", icon="📉"
 )
+hedge_summary_page = st.Page(
+    "apps/hedge_summary.py", title="Hedge Summary", icon="🛡️"
+)
 
-pg = st.navigation([bhavcopy_page, pnl_page, excel_merger_page, var_cost_page])
+pg = st.navigation([bhavcopy_page, pnl_page, excel_merger_page, var_cost_page, hedge_summary_page])
 pg.run()
