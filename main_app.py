@@ -125,6 +125,9 @@ var_cost_page = st.Page(
 hedge_summary_page = st.Page(
     "apps/hedge_summary.py", title="Hedge Summary", icon="🛡️"
 )
+daily_data_page = st.Page(
+    "apps/daily_data.py", title="Daily Data Manager", icon="📅"
+)
 
-pg = st.navigation([bhavcopy_page, pnl_page, excel_merger_page, var_cost_page, hedge_summary_page])
+pg = st.navigation([bhavcopy_page, pnl_page, excel_merger_page, var_cost_page, hedge_summary_page, daily_data_page])
 pg.run()
